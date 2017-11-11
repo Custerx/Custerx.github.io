@@ -1,0 +1,235 @@
+@charset "UTF-8"
+/* SASS Document */
+
+html, body, div, header, nav, main, section, footer 
+    margin: 0
+    padding: 0
+header, nav, main, footer, section 
+    display: block
+
+/* --- Variables --- */
+$color-white: white
+$no-text-decoration: none
+
+/* --- Nesting --- */
+header
+    a:link, footer a:visited
+        color: $color-white
+        text-decoration: $no-text-decoration
+
+    a:hover, footer a:active
+        color: $color-white
+        font-weight: bold
+        
+.main
+    img
+        transition: transform 1s
+
+    img:hover
+        transform: scale(1.2)
+
+footer
+    p
+        text-align: left
+        font-size: 18px
+
+    a:link, a:visited
+        color: $color-white
+        text-decoration: $no-text-decoration
+    
+    a:hover, a:active
+        color: $color-white
+        font-weight: bold
+
+    button
+        background-color: green
+        color: $color-white
+        padding: 8px 14px
+        border: none
+        border-radius: 4px
+        cursor: pointer
+        font-size: 16px
+        
+    button:hover
+        background-color: greenyellow
+    
+
+/* --- Layout --- */
+
+header 
+    background-image: url(../pics/header1.jpg) 
+    background-repeat: no-repeat 
+    height: 168px 
+    padding: 1.2px 
+    background-size: 100%
+
+body 
+    background-color: gainsboro 
+    color: black 
+    font-family: sans-serif 
+    font-size: 12px
+    
+#wrapper 
+    background-color: whitesmoke 
+    width: 1200px 
+    margin: 0 auto
+
+
+.logo 
+    text-align: left 
+    font: cursive 
+    font-size: 48px 
+    color: white 
+    text-decoration: none
+
+main
+    text-align: center
+    
+main:after 
+    content: "" 
+    display: block 
+    clear: both
+
+main h1 
+    font-style: cursive
+
+.main 
+    margin-top: 30px
+
+footer 
+    background-color: dimgray 
+    color: white 
+    padding: 10px 
+    text-align: center 
+    font-size: 22px 
+    clear: both 
+    padding-top: 4px
+
+.footer 
+    display: inline
+
+.footer:after 
+    content: "" 
+    display: table 
+    clear: both
+
+.columnfooter 
+    float: left 
+    width: 33%
+
+/* --- Interaktivdesign --- */
+@media screen and (max-width: 1230px)
+    #wrapper 
+        width: 800px 
+        margin: 0 auto
+    
+    .logo 
+        font-size: 36px
+
+    header 
+        height: 120px 
+        background-size: 100%
+
+    footer p 
+        font-size: 14px
+
+    .main 
+        margin-top: 20px
+
+@media screen and (max-width: 800px)
+    #wrapper 
+        background-color: whitesmoke 
+        width: 100% 
+        margin: 0 auto
+
+    .logo 
+        font-size: 36px
+        
+    header 
+        height: 120px 
+        background-size: 100%
+
+    footer p 
+        font-size: 14px
+
+    .main 
+        margin-top: 20px
+
+@media screen and (max-width: 500px)
+    #wrapper 
+        width: 100% 
+        margin: 0 auto
+
+    .logo 
+        font-size: 30px
+
+    header 
+        height: 100px 
+        background-size: 100%
+
+    footer p 
+        font-size: 14px
+
+    .main 
+        margin-top: 20px
+
+    main h1 
+        font-size: 20px
+
+@media screen and (max-width: 430px) 
+    #wrapper 
+        width: 100% 
+        margin: 0 auto
+
+    .logo 
+        font-size: 20px
+
+    header 
+        height: 70px 
+        background-size: 100%
+
+    footer p 
+        font-size: 12px
+
+    .main 
+        margin-top: 10px
+
+    main h1 
+        font-size: 16px
+
+    .main img 
+        transition: transform 1s
+
+    .main img:hover 
+        transform: scale(1.06)
+
+@media screen and (max-width: 380px)
+    .main 
+        margin-top: 0px
+
+    .columnfooter 
+        float: left 
+        width: 50%
+
+@media screen and (max-width: 300px)
+    .logo 
+        font-size: 14px
+
+    header 
+        height: 60px 
+        background-size: 100%
+
+    main h1 
+        font-size: 14px
+
+@media screen and (max-width: 280px) 
+    .logo 
+        font-size: 14px
+
+    header 
+        height: 60px 
+        background-size: 100%
+        
+@import contact
+
+@import nav
