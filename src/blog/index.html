@@ -1,0 +1,87 @@
+---
+title: blog
+layout: default
+---
+<body>
+<div id="wrapper">
+    <header>
+        <a class="logo" href="../index.html">INTRO</a>   
+    </header>
+
+    <nav>
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn"><b>Meny</b> 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="index.html">Blogg</a>
+                    <a href="../page2/index.html">Bloggposter</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+ <main>
+                                
+    <ul class="breadcrumb">
+        <li><a href="../index.html">Intro</a></li>
+        <li>Blogg</li>
+    </ul>
+        
+    <div class="main">
+        <h1>Blogg</h1>
+            <div class="columnProdPic">
+                <div class="card">
+                    <img src="../img/blog.jpg" alt="blogg" style="width:100%">
+                    <div class="container">
+                        <h2>Om bloggen</h2>
+                        <p class="title">Allmänt</p>
+                        <p>Hej! Denna sida kommer representera min blogg.</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+            
+    <div class="main">
+        <div class="columnProdInfo">
+            <div class="container">
+                <h2>Min åsikt om..</h2>
+                    <div class="prodLine">
+                        <p><b>Pre-kompilering av CSS</b></p>
+                        <p>När stylesheets blir större och mer komplexa så blir de svårare att underhålla. Preprocessor som tex. Sass, låter oss använda funktioner som inte existerar i CSS. Några exempel är: variabler, nesting och mixins. Sass tar våran förbehandlade Sass-fil och sparar den som en vanlig CSS-fil som kan användas på vår webbplats.</p>
+                        <p>När Sass är installerat så kan man köra kommandot <b>"sass input.scss output.css"</b> från terminalen. Vi kan titta på enskila filer eller hela kataloger. Dessautom är det möjligt att titta på mappar eller kataloger med <b>"--watch"</b> flag. Sass kan användas när vi tittar på en hel katalog genom följande kommando: "sass --watch app/sass:public/stylesheets".</p>
+                        <p>Några Sass tips. Symbolen "$" används för att skapa <b>variabler</b>. "Nesting" av subkategorier görs genom att skapa objekt literaler. Genom att använda <b>"partials"</b> är det enkelt att skapa olika CSS moduler för att förenkla underhåll av dem. Detta görs genom ett leading underscore tex. "_partial.scss". Sass partials används med "@import".</p>
+                        <p><b>Import</b> tar filen som importeras och kombinerar den med filen som den importerar till, därav skapas bara en enda CSS-fil till webbläsaren. Tex: vi vill importera "_reset.scss" till "base.scss". Detta görs genom att skriva "@import 'reset';" i början base.scss.</p>
+                        <p><b>"Mixins"</b> låter dig skapa grupper av CSS-deklarationer som du vill återanvända på din webbplats. Vi kan även skicka in värden för att göra vår "mixin" mer flexibel. Mixins är lämpliga för prefixs. Tex: "@mixin gerMixinEttNamn($namnPåVariabeln)". Efter vi skapat mixin så kan den användas som en CSS deklaration genom kommandot "@include namnetPåMixin(värdetPåVariabeln)".</p>
+                        <p>Arv görs genom kommandot <b>"@extend"</b>. Med arv tar man CSS-egenskaperna från en selektor till en annan. Detta hjälper oss att undvika att skriva flera klassnamn på html-elementen.</p>
+                        <p><b>"Operators"</b> används för att beräkna matematik i CSS. Sass har några standard math operatörer som: "+, -, *, / och %".</p>
+                        <p><b>Fördelar med Sass är:</b> Minde mängd CSS kod, "DRY" CSS, göra beräkningar i CSS, bättre organiserad CSS (inkapsling, separera CSS koden i olika filer och användning av mixins), använding av variabler.</p>
+                        <p><b>Nackdelar med Sass är:</b> Svårare att felsöka kod, linje nummer i webbläsaren är inte detsamma som radnummer i källan, större komplexitet, fler verktyg, mer inställningar, ökad byggtid, spara genererade filer i källkontroll?</p>
+
+                        <p><b>Static site generators</b></p> 
+                        <p>Static site generators tar mallar, text, html som indata och producerar en statisk html sida. SSGS är lämpligast för project som letar efter: prestanda, version kontrollerat innehåll, säkerhet (kräver varken uppdateringar eller databaser), endast en enkel webbserver behövs, klarar av mycket traffik (skala och cache). <b>Jekyll</b> är den static site generator som används i denna kurs. Där webbsidan publiceras på github.</p>
+                        <p><b>Nackdelen med SSGS:</b> endast statiskt innehåll (ingen realtidsuppdatering, ingen användarinmatning och ingen admin-UI), mer komplexitet jämfört med statisk html, behöver verktyg för att bygga sidan eller en värd som stödjer static site generator.</p>
+
+                        <p><b>Robots.txt</b></p> 
+                        <p>Webbplatsägare använder filen /robots.txt för att ge instruktioner om sin webbplats till webbrobotar. Det har en engelsk term kallad "The Robots Exclusion Protocol".</p>
+                        <p>Kortfattat kan man säga att en robot som vill besöka en webbsida måste först kontrollera om där finns en robots.txt fil. Denna fil kan dock ignoreras av robotar, speciellt skadliga robotar som letar efter känslig information. Vem som helst kan även se robots.txt filen så man leder personer till det material man vill gömma - med andra ord skall robots.txt inte användas för att gömma information.</p>
+                        <p>Jag använde mig av följande konfigurationer. Först skapades robots.txt filen och placerades i startmappen tillsammans med index.htm. Jag valde alternativet att ge samtliga robotar fullständig access, då jag inte har någon känslig information på mina sidor. <br>Detta gjorde enligt följande: <br>User-agent: *<br>Disallow:</p>
+                                
+                        <p><b>Humans.txt</b></p>
+                        <p>Humans.txt är ett initiativ för att lära känna personerna bakom en webbplats. Detta görs genom humans.txt som innehåller information om de olika personerna som bidragit till att bygga webbplatsen.</p>
+                        <p>Genom att lägga till en txt-fil så kan du bevisa ditt författarskap på ett externt, snabbt, enkelt och tillgängligt sätt. Filen placeras på samma ställe som robots.txt filen, dvs. i webbplatsens rot med index.htm.</p>
+                        <p>Jag använde mig av följande konfigurationer. Först skapades humans.txt som placerades vid robots.txt. I humans.txt adderades UTF-8 och sedan användes standard templaten från deras hemsida. Jag länkade även till humans.txt i index.htm - head. Placerade även en knapp i footern på index.htm som länkar till human.txt.</p>
+                                
+                        <p><b>The Open Graph Protocol</b></p>
+                        <p>Ogp.me gör det möjligt för en webbsida att användas som sociala medier, dvs. objekt på webbsidan har samma funktion som något annat objekt på tex Facebook. För att göra våra webbsidor till "graph objects" krävs det att vi lägger till grundläggande metadata på webbsidorna. Detta görs genom att lägga till meta-taggar i head-delen. De meta-taggar som krävs är <b>"og:title", "og:type", "og:image" och "og:url"</b>. Fler meta-taggar kan tilläggas men dessa är valfria.</p>
+                                
+                        <p><b>Implementering av blogg inlägg</b></p>
+                        <p>Jag implementerade kommenterar av blogg inlägg genom att...</p>
+
+                    </div>
+            </div>
+        </div>
+    </div>
+            
+</main>
+  
