@@ -2,6 +2,7 @@
 title:  "Disqus"
 date:   2017-11-14
 layout: post
+comments: true
 ---
 <div class="section post-content--{{ page.date | date: '%Y-%m-%d' }}">
     <div class="main">
@@ -24,7 +25,7 @@ layout: post
             <div class="container">
                 <h2>Information</h2>
                 <div class="prodLine">
-                    <p>Där väljer man alternativet "create a new site" och skriver in namnet på webbsidan. </p>
+                    <p>Där väljer man alternativet "create a new site" och skriver in namnet på webbsidan. Sedan väljs Jekyll som plattform. I yaml front matter läggs "comments: true" som aktiverar kommenterar. Universal code kopieras och klistras in på den plats som kommentationsfältet önskas.</p>
                 </div>
             </div>
         </div>

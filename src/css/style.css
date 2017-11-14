@@ -134,7 +134,7 @@ button:hover {
 @media screen and (max-width: 800px) {
   #wrapper {
     background-color: whitesmoke;
-    width: 100%;
+    width: 500px;
     margin: 0 auto; }
 
   .logo {

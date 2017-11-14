@@ -50,7 +50,7 @@ layout: default
                         <p><b>Senaste bloggposter</b></p
                         {% for post in site.posts %}
 		                <time>{{ post.date | date: "%b %-d, %Y" }}</time>
-		                <button><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></button><br>
+		                <button><a href="{{ post.url | prepend: site.baseurl }}"#disqus_thread>{{ post.title }}</a></button><br>
                         {% endfor %}
                     </div>
             </div>
