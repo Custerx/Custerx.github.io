@@ -1,0 +1,60 @@
+---
+title: page2
+layout: default
+---
+<body>
+<div id="wrapper">
+    <header>
+        <a class="logo" href="../index.html">INTRO</a>   
+    </header>
+
+    <nav>
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn"><b>Meny</b> 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../blog/index.html">Blogg</a>
+                    <a href="index.html">Bloggposter</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+<main>
+                                
+    <ul class="breadcrumb">
+        <li><a href="../index.html">Intro</a></li>
+        <li>Bloggposter</li>
+    </ul>
+        
+    <div class="main">
+        <h1>Bloggposter</h1>
+            <div class="columnProdPic">
+                <div class="card">
+                    <img src="../img/blog.jpg" alt="blogg" style="width:100%">
+                    <div class="container">
+                        <h2>Om sidan</h2>
+                        <p class="title">Allmänt</p>
+                        <p>Hej! Denna sida publicerar länkar till mina bloggposter.</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+            
+    <div class="main">
+        <div class="columnProdInfo">
+            <div class="container">
+                <h2>Bloggposter</h2>
+                    <div class="prodLine">
+                        <p><b>Senaste bloggposter</b></p
+                        {% for post in site.posts %}
+		                <time>{{ post.date | date: "%b %-d, %Y" }}</time>
+		                <button><a href="{{ post.url | prepend: site.baseurl }}"#disqus_thread>{{ post.title }}</a></button><br>
+                        {% endfor %}
+                    </div>
+            </div>
+        </div>
+    </div>
+            
+</main>

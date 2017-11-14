@@ -1,0 +1,493 @@
+@charset "UTF-8";
+/* SASS Document */
+html, body, div, header, nav, main, section, footer {
+  margin: 0;
+  padding: 0; }
+
+header, nav, main, footer, section {
+  display: block; }
+
+/* --- Variables --- */
+/* --- Nesting --- */
+header a:link, header footer a:visited {
+  color: white;
+  text-decoration: none; }
+header a:hover, header footer a:active {
+  color: white;
+  font-weight: bold; }
+
+.main img {
+  transition: transform 1s; }
+.main img:hover {
+  transform: scale(1.2); }
+
+footer p {
+  text-align: left;
+  font-size: 18px; }
+footer a:link, footer a:visited {
+  color: white;
+  text-decoration: none; }
+footer a:hover, footer a:active {
+  color: white;
+  font-weight: bold; }
+footer button {
+  background-color: green;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px; }
+footer button:hover {
+  background-color: greenyellow; }
+
+/* --- Layout --- */
+header {
+  background-image: url(../img/header1.jpg);
+  background-repeat: no-repeat;
+  height: 168px;
+  padding: 1.2px;
+  background-size: 100%; }
+
+body {
+  background-color: gainsboro;
+  color: black;
+  font-family: sans-serif;
+  font-size: 12px; }
+
+#wrapper {
+  background-color: whitesmoke;
+  width: 1200px;
+  margin: 0 auto; }
+
+.logo {
+  text-align: left;
+  font: cursive;
+  font-size: 48px;
+  color: white;
+  text-decoration: none; }
+
+main {
+  text-align: center; }
+
+main:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+main h1 {
+  font-style: cursive; }
+
+.main {
+  margin-top: 30px; }
+
+footer {
+  background-color: dimgray;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 22px;
+  clear: both;
+  padding-top: 4px; }
+
+.footer {
+  display: inline; }
+
+.footer:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.columnfooter {
+  float: left;
+  width: 33%; }
+
+button {
+  background-color: green;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px; }
+button:hover {
+  background-color: greenyellow; }
+
+/* --- Interaktivdesign --- */
+@media screen and (max-width: 1230px) {
+  #wrapper {
+    width: 800px;
+    margin: 0 auto; }
+
+  .logo {
+    font-size: 36px; }
+
+  header {
+    height: 120px;
+    background-size: 100%; }
+
+  footer p {
+    font-size: 14px; }
+
+  .main {
+    margin-top: 20px; } }
+@media screen and (max-width: 800px) {
+  #wrapper {
+    background-color: whitesmoke;
+    width: 500px;
+    margin: 0 auto; }
+
+  .logo {
+    font-size: 36px; }
+
+  header {
+    height: 120px;
+    background-size: 100%; }
+
+  footer p {
+    font-size: 14px; }
+
+  .main {
+    margin-top: 20px; } }
+@media screen and (max-width: 500px) {
+  #wrapper {
+    width: 100%;
+    margin: 0 auto; }
+
+  .logo {
+    font-size: 30px; }
+
+  header {
+    height: 100px;
+    background-size: 100%; }
+
+  footer p {
+    font-size: 14px; }
+
+  .main {
+    margin-top: 20px; }
+
+  main h1 {
+    font-size: 20px; } }
+@media screen and (max-width: 430px) {
+  #wrapper {
+    width: 100%;
+    margin: 0 auto; }
+
+  .logo {
+    font-size: 20px; }
+
+  header {
+    height: 70px;
+    background-size: 100%; }
+
+  footer p {
+    font-size: 12px; }
+
+  .main {
+    margin-top: 10px; }
+
+  main h1 {
+    font-size: 16px; }
+
+  .main img {
+    transition: transform 1s; }
+
+  .main img:hover {
+    transform: scale(1.06); } }
+@media screen and (max-width: 380px) {
+  .main {
+    margin-top: 0px; }
+
+  .columnfooter {
+    float: left;
+    width: 50%; } }
+@media screen and (max-width: 300px) {
+  .logo {
+    font-size: 14px; }
+
+  header {
+    height: 60px;
+    background-size: 100%; }
+
+  main h1 {
+    font-size: 14px; } }
+@media screen and (max-width: 280px) {
+  .logo {
+    font-size: 14px; }
+
+  header {
+    height: 60px;
+    background-size: 100%; } }
+/* Start of _contact SASS Document */
+a {
+  text-decoration: none;
+  color: white; }
+
+/* Delar av denna CSS kod har hämtats från https://www.w3schools.com/howto/howto_css_team.asp */
+/*----------------------------------------------------------------------------------- */
+/* --- Variables --- */
+/* --- Layout --- */
+.columnProdInfo {
+  float: left;
+  width: 45%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  font-size: 14px;
+  padding: 1.4% 0.8%;
+  margin-left: 0.5%; }
+
+.columnProdPic {
+  float: left;
+  width: 45%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  padding: 1.4% 0.8%;
+  margin-left: 0.5%; }
+
+.prodLine {
+  text-align: left; }
+
+.prodDots {
+  margin-left: 10px; }
+
+.column {
+  float: left;
+  width: 45%;
+  margin-bottom: 16px;
+  padding: 1.4% 0.8%;
+  margin-left: 0.5%; }
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  background-color: gainsboro; }
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px; }
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.title {
+  color: black;
+  font-size: 16px; }
+
+/*------------------------------------------------------------------------------------ */
+/* --- Interaktivdesign --- */
+@media screen and (max-width: 1230px) {
+  .columnProdInfo {
+    font-size: 12px; } }
+@media (max-width: 650px) {
+  .column {
+    width: 45%;
+    margin-left: 5px;
+    margin-bottom: 2px; }
+
+  .container {
+    padding: 0 10px; }
+
+  .columnProdInfo {
+    font-size: 12px;
+    width: 95%; }
+
+  .columnProdPic {
+    width: 95%; } }
+@media (max-width: 430px) {
+  .column {
+    width: 95%; } }
+/* --- End of _contact.sass --- */
+/* --- Start of _nav.SASS Document --- */
+/*Delar av följande css kod för navigering har kopierats från: https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp. */
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: darkgray;
+  font-family: cursive; }
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; }
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden; }
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  width: 200px; }
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: darkred; }
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.6);
+  z-index: 1; }
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left; }
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: gainsboro; }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+/*css för breadcrumbs. stora delar av koden på https://www.w3schools.com/howto/howto_css_breadcrumbs.asp används med egna inställningar. */
+/* Style the list */
+ul.breadcrumb {
+  padding: 1px 10px;
+  list-style: none;
+  background-color: whitesmoke;
+  text-align: left; }
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 14px; }
+
+/* Add a slash symbol (>) before/behind each list item */
+ul.breadcrumb li + li:before {
+  padding: 4px;
+  color: black;
+  content: "> "; }
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: green;
+  text-decoration: none; }
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: greenyellow;
+  text-decoration: underline; }
+
+/* --- Interaktivdesign --- */
+@media screen and (max-width: 1230px) {
+  .navbar a {
+    font-size: 11px;
+    padding: 11px 13px; }
+
+  .dropdown .dropbtn {
+    font-size: 11px;
+    padding: 11px 13px;
+    width: 150px; }
+
+  .dropdown-content {
+    box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.6);
+    width: 150px; }
+
+  .dropdown-content a {
+    padding: 10px 13px; }
+
+  ul.breadcrumb li {
+    font-size: 12px; } }
+@media screen and (max-width: 800px) {
+  .navbar a {
+    font-size: 8px;
+    padding: 8px 10px; }
+
+  .dropdown .dropbtn {
+    font-size: 8px;
+    padding: 8px 10px;
+    width: 100px; }
+
+  .dropdown-content {
+    box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.6);
+    width: 100px; }
+
+  .dropdown-content a {
+    padding: 7px 9px; }
+
+  ul.breadcrumb li {
+    font-size: 11px; } }
+@media screen and (max-width: 500px) {
+  .navbar a {
+    font-size: 7px;
+    padding: 8px 9px; }
+
+  .dropdown .dropbtn {
+    font-size: 7px;
+    padding: 8px 9px;
+    width: 85px; }
+
+  .dropdown-content {
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.6);
+    width: 85px; }
+
+  .dropdown-content a {
+    padding: 6px 7px; }
+
+  ul.breadcrumb li {
+    font-size: 10px; } }
+@media screen and (max-width: 430px) {
+  .navbar a {
+    font-size: 6px;
+    padding: 6px 7px; }
+
+  .dropdown .dropbtn {
+    font-size: 6px;
+    padding: 6px 7px;
+    width: 76px; }
+
+  .dropdown-content {
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.6);
+    width: 76px; }
+
+  .dropdown-content a {
+    padding: 4px 6px; }
+
+  ul.breadcrumb li {
+    font-size: 10px; } }
+@media screen and (max-width: 370px) {
+  .navbar a {
+    font-size: 8px;
+    padding: 8px 10px; }
+
+  .dropdown .dropbtn {
+    font-size: 8px;
+    padding: 8px 10px;
+    width: 93px; }
+
+  .dropdown-content {
+    box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.6);
+    width: 93px; }
+
+  .dropdown-content a {
+    padding: 7px 9px; }
+
+  ul.breadcrumb li {
+    font-size: 10px; } }
+/* --- End of _nav.SASS Document --- */
+
+/*# sourceMappingURL=style.css.map */

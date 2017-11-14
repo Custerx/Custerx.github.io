@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "UTF-8"
 /* --- Start of _nav.SASS Document --- */
 
@@ -195,3 +196,202 @@ ul.breadcrumb li a:hover
         font-size: 10px
 
 /* --- End of _nav.SASS Document --- */
+=======
+@charset "UTF-8"
+/* --- Start of _nav.SASS Document --- */
+
+/*Delar av följande css kod för navigering har kopierats från: https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp. 
+
+/* Navbar container */
+.navbar
+  overflow: hidden
+  background-color: darkgray
+  font-family: cursive
+
+/* Links inside the navbar */
+.navbar a
+  float: left
+  font-size: 16px
+  color: white
+  text-align: center
+  padding: 14px 16px
+  text-decoration: none
+
+/* The dropdown container */
+.dropdown
+  float: left
+  overflow: hidden
+
+/* Dropdown button */
+.dropdown .dropbtn
+  font-size: 16px 
+  border: none
+  outline: none
+  color: white
+  padding: 14px 16px
+  background-color: inherit
+  width: 200px
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn
+  background-color: darkred
+
+/* Dropdown content (hidden by default) */
+.dropdown-content
+  display: none
+  position: absolute
+  background-color: #f9f9f9
+  width: 200px
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6)
+  z-index: 1
+
+/* Links inside the dropdown */
+.dropdown-content a
+  float: none
+  color: black
+  padding: 12px 16px
+  text-decoration: none
+  display: block
+  text-align: left
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover
+  background-color: gainsboro
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content
+  display: block
+
+/*css för breadcrumbs. stora delar av koden på https://www.w3schools.com/howto/howto_css_breadcrumbs.asp används med egna inställningar. 
+
+/* Style the list */
+ul.breadcrumb
+    padding: 1px 10px
+    list-style: none
+    background-color: whitesmoke
+    text-align: left
+
+/* Display list items side by side */
+ul.breadcrumb li
+    display: inline
+    font-size: 14px
+
+/* Add a slash symbol (>) before/behind each list item */
+ul.breadcrumb li+li:before
+    padding: 4px
+    color: black
+    content: ">\00a0"
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a
+    color: green
+    text-decoration: none
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover
+    color: greenyellow
+    text-decoration: underline
+
+/* --- Interaktivdesign --- */
+@media screen and (max-width: 1230px)
+    .navbar a 
+        font-size: 11px 
+        padding: 11px 13px
+
+    .dropdown .dropbtn 
+        font-size: 11px 
+        padding: 11px 13px
+        width: 150px
+
+    .dropdown-content 
+        box-shadow: 0px 6px 13px 0px rgba(0,0,0,0.6) 
+        width: 150px
+
+    .dropdown-content a 
+        padding: 10px 13px
+
+    ul.breadcrumb li 
+        font-size: 12px
+
+@media screen and (max-width: 800px)
+    .navbar a 
+        font-size: 8px 
+        padding: 8px 10px
+
+    .dropdown .dropbtn 
+        font-size: 8px 
+        padding: 8px 10px 
+        width: 100px
+
+    .dropdown-content 
+        box-shadow: 0px 4px 9px 0px rgba(0,0,0,0.6) 
+        width: 100px
+
+    .dropdown-content a 
+        padding: 7px 9px
+
+    ul.breadcrumb li 
+        font-size: 11px
+
+@media screen and (max-width: 500px)
+    .navbar a 
+        font-size: 7px
+        padding: 8px 9px
+
+    .dropdown .dropbtn 
+        font-size: 7px
+        padding: 8px 9px 
+        width: 85px
+
+    .dropdown-content 
+        box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.6) 
+        width: 85px
+
+    .dropdown-content a 
+        padding: 6px 7px
+
+    ul.breadcrumb li 
+        font-size: 10px
+
+@media screen and (max-width: 430px)
+    .navbar a 
+        font-size: 6px
+        padding: 6px 7px
+
+    .dropdown .dropbtn 
+        font-size: 6px
+        padding: 6px 7px
+        width: 76px
+
+    .dropdown-content 
+        box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.6)
+        width: 76px
+
+    .dropdown-content a 
+        padding: 4px 6px
+
+    ul.breadcrumb li 
+        font-size: 10px
+
+@media screen and (max-width: 370px)
+    .navbar a 
+        font-size: 8px 
+        padding: 8px 10px
+
+    .dropdown .dropbtn 
+        font-size: 8px
+        padding: 8px 10px
+        width: 93px
+
+    .dropdown-content 
+        box-shadow: 0px 4px 9px 0px rgba(0,0,0,0.6)
+        width: 93px
+
+    .dropdown-content a 
+        padding: 7px 9px
+
+    ul.breadcrumb li 
+        font-size: 10px
+
+/* --- End of _nav.SASS Document --- */
+>>>>>>> 14f074ee95006ab7161ba88163439b42eb501a4c
